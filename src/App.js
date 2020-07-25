@@ -1,9 +1,9 @@
 import React from 'react';
 
-import Ingredients from './components/Ingredients/Ingredients';
+import Todos from './components/todo/Todos';
 
 const App = props => {
-  return <Ingredients />;
+  return <Todos />;
 };
 
 export default App;
