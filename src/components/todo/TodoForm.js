@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 
-import Card from '../UI/Card';
 import './TodoForm.css';
 
 const TodoForm = props => {
@@ -12,8 +11,8 @@ const TodoForm = props => {
   };
 
   return (
-    <section className="todo-form">
-      <Card>
+    <div className="todo-form">
+      <div className="card">
         <form onSubmit={submitHandler}>
           <div className="form-control">
             <label htmlFor="title">Name</label>
@@ -30,8 +29,8 @@ const TodoForm = props => {
             <button type="submit">Add Todo</button>
           </div>
         </form>
-      </Card>
-    </section>
+      </div>
+    </div>
   );
 };
 

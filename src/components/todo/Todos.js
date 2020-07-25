@@ -21,12 +21,7 @@ const Todos = props => {
   return (
     <div className="App">
       <TodoForm onAddTodo={addTodoHandler} />
-
-      <section>
-        <TodoList 
-          todos={todos} 
-          onRemoveTodo={removeTodoHandler} />
-      </section>
+      <TodoList todos={todos} onRemoveTodo={removeTodoHandler} />
     </div>
   );
 }
