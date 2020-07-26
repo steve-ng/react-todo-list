@@ -15,14 +15,12 @@ const TodoForm = props => {
       <div className="card">
         <form onSubmit={submitHandler}>
           <div className="form-control">
-            <label htmlFor="title">Name</label>
+            <label htmlFor="title">Title</label>
             <input
               type="text"
               id="title"
               value={enteredTitle}
-              onChange={event => {
-                setEnteredTitle(event.target.value);
-              }}
+              onChange={event => setEnteredTitle(event.target.value)}
             />
           </div>
           <div className="todo-form__actions">
